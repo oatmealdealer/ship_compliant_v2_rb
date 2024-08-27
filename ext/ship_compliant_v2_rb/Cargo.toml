@@ -9,4 +9,12 @@ publish = false
 crate-type = ["cdylib"]
 
 [dependencies]
-magnus = { version = "0.6" }
+    anyhow               = "1.0.86"
+    base64               = "0.22.1"
+    hyper                = "1.4.1"
+    magnus               = { version = "0.7.1" }
+    reqwest              = "0.12.5"
+    serde                = "1.0.208"
+    serde_magnus         = { git = "https://github.com/oatmealdealer/serde-magnus.git", branch = "update-magnus" }
+    ship_compliant_v2_rs = { git = "https://github.com/oatmealdealer/ship_compliant_v2_rs.git" }
+    tokio                = { version = "1.39.3", features = ["rt-multi-thread"] }
